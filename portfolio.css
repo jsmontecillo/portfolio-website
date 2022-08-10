@@ -1,0 +1,85 @@
+body {
+    background-color:rgb(219, 216, 216);
+    font-family: 'Space Mono', monospace;
+}
+
+span {
+    float: right;
+}
+
+#navigation {
+    height: 25px;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(175, 173, 173);
+    float: left;
+}
+
+#icon-group {
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#janice-photo {
+    border-radius: 50%;
+    height: 150px;
+}
+
+.folder-icon {
+    height: 70px;
+    margin-bottom: -10px;
+}
+
+.folder-icon:hover {
+    background-image: url(6.tiff);
+    opacity: transparent;
+}
+
+.folder-names {
+    font-size: 12px;
+    text-align: center;
+    line-height: 0px;
+    text-shadow:rgba(0, 0, 0, 0.2);
+}
+
+.sections {
+    float: right;
+    margin-right: 200px;
+    margin-top: 30px;
+}
+
+.first-folder-on {
+    height: 400px;
+    width: 700px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color:rgb(245, 180, 180);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.second-folder-on {
+    height: 400px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: lightpink;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.third-folder-on {
+    height: 400px;
+    width: 700px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color:lightseagreen;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.folder-off {
+    display: none;
+}
+
+
