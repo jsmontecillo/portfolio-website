@@ -52,6 +52,7 @@ span {
 }
 
 .first-folder-on {
+    display: none;
     height: 400px;
     width: 700px;
     padding: 20px;
