@@ -4,44 +4,54 @@
         <title>Janice's Portfolio</title>
         <link rel="stylesheet" type="text/css" href="portfolio.css" />
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="navigation">
             <a href="">Home</a>
-            <a href="">Linkedin</a>
-            <a href="">Techtonica</a>
+            <a href="www.linkedin.com/in/janicemontecillo">Linkedin</a>
+            <a href="https://twitter.com/jsmontecillo">Twitter</a>
+            <a href="https://techtonica.org/">Techtonica</a>
         </div>
         
         <div id="icon-group">
-            <img src="12.tiff" alt="about folder icon" class="folder-icon" onclick="openWindowOne()"><p class="folder-names">About</p><br>
-            <img src="16.tiff" alt="project folder icon" class="folder-icon" onclick="openWindowTwo()"><p class="folder-names">Projects</p><br>
-            <img src="11.tiff" alt="contact folder icon" class="folder-icon" onclick="openWindowThree()"><p class="folder-names">Contact</p><br>
+            <img src="tab1.png" alt="about folder icon" class="folder-icon" onclick="openWindowOne()"><p class="folder-names">About</p><br>
+            <img src="tab2.png" alt="project folder icon" class="folder-icon" onclick="openWindowTwo()"><p class="folder-names">Projects</p><br>
+            <img src="tab3.png" alt="contact folder icon" class="folder-icon" onclick="openWindowThree()"><p class="folder-names">Contact</p><br>
         </div>
 
         <div class="sections">
             <section id="FIRST" class="folder-off">
                 <div class="folder-nav">About</div>
-                <img src="janice.JPG" alt="photo of Janice" id="janice-photo">
-                <h2>Hi! I'm Janice</h2>
-                <p>I am a software engineer in training at Techtonica.</p>
+                <div class="tab-text">
+                    <img src="janice.JPG" alt="photo of Janice" id="janice-photo">
+                    <h2>Hi! I'm Janice</h2>
+                    <p>I am a software engineer in training at Techtonica.</p>
+                </div>
             </section>
             <section id="SECOND" class="folder-off">
                 <div class="folder-nav">My Projects</div>
-                <h3>My Projects</h3>
-                <ul>
-                    <li>Recipe Page</li>
-                    <li>Github Repositories</li>
-                </ul>
+                <div class="tab-text">
+                    <h3>My Projects</h3>
+                    <ul>
+                        <li>Recipe Page</li>
+                        <li>Github Repositories</li>
+                    </ul>
+                </div>
             </section>
             <section id="THIRD" class="folder-off">
                 <div class="folder-nav">Contact</div>
-                <h3>Stay In Touch</h3>
-                <form>
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lname">
-                </form>
+                <div class="tab-text">
+                    <h3>Stay In Touch</h3>
+                    <form>
+                        <label for="fname">First Name</label>
+                        <input type="text" required id="fname" name="fname"><br>
+                        <label for="lname">Last Name</label>
+                        <input type="text" required id="lname" name="lname"><br>
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email">
+                    </form>
+                </div>
             </section>
         </div>
         <script src="portfolio.js"></script>
