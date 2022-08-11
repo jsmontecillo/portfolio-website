@@ -28,6 +28,11 @@ a:hover {
     opacity: 0.5;
 }
 
+form {
+    margin-top: 3px;
+    padding: 10px;
+}
+
 input[type=text] {
     box-sizing: border-box;
     width: 100%
@@ -52,7 +57,7 @@ input[type=text] {
 
 #janice-photo {
     border-radius: 50%;
-    height: 150px;
+    height: 200px;
     margin-top: 10px;
     margin-left: 20px;
 }
@@ -136,6 +141,15 @@ input[type=text] {
     padding: 20px;
     font-family: 'Archivo', sans-serif;
     font-size: 12px;
+}
+
+.tab-description {
+    position: absolute;
+    margin-top: -90px;
+    padding: 20px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 12px;
+    text-align: right;
 }
 
 .folder-off {
