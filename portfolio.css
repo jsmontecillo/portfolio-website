@@ -28,6 +28,15 @@ a:hover {
     opacity: 0.5;
 }
 
+input[type=text] {
+    box-sizing: border-box;
+}
+
+p,
+h1 {
+    margin: 10px;
+}
+
 #navigation {
     height: 20px;
     border-radius: 3px;
@@ -75,6 +84,7 @@ a:hover {
 }
 
 .folder-nav {
+    text-align: center;
     background-color: #f3f1f8;
     font-size: 13px;
     padding: 3px;
@@ -88,10 +98,12 @@ a:hover {
     height: 400px;
     width: 700px;
     padding: 0;
+    border: 7px black;
     border-radius: 15px;
     background-color:#ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.5s;
+    overflow: scroll;
 }
 
 .second-folder-on {
@@ -103,8 +115,10 @@ a:hover {
     width: 300px;
     padding: 0px;
     border-radius: 15px;
-    background-color: lightpink;
+    background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s;
+    overflow: scroll;
 }
 
 .third-folder-on {
@@ -116,8 +130,10 @@ a:hover {
     width: 400px;
     padding: 0px;
     border-radius: 15px;
-    background-color:lightseagreen;
+    background-color:#ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s;
+    overflow: scroll;
 }
 
 .folder-off {
