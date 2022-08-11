@@ -10,34 +10,40 @@
             <a href="">Home</a>
             <a href="">Linkedin</a>
             <a href="">Techtonica</a>
-            <span>Janice Montecillo</span>
         </div>
         
         <div id="icon-group">
-            <img src="12.tiff" alt="about folder icon" class="folder-icon"><p class="folder-names">About</p><br>
-            <img src="16.tiff" alt="project folder icon" class="folder-icon"><p class="folder-names">Projects</p><br>
-            <img src="11.tiff" alt="contact folder icon" class="folder-icon"><p class="folder-names">Contact</p><br>
+            <img src="12.tiff" alt="about folder icon" class="folder-icon" onclick="openWindowOne()"><p class="folder-names">About</p><br>
+            <img src="16.tiff" alt="project folder icon" class="folder-icon" onclick="openWindowTwo()"><p class="folder-names">Projects</p><br>
+            <img src="11.tiff" alt="contact folder icon" class="folder-icon" onclick="openWindowThree()"><p class="folder-names">Contact</p><br>
         </div>
 
         <div class="sections">
-            <div class="first-folder-on">
+            <section id="FIRST" class="folder-off">
+                <div class="folder-nav">About</div>
                 <img src="janice.JPG" alt="photo of Janice" id="janice-photo">
                 <h2>Hi! I'm Janice</h2>
                 <p>I am a software engineer in training at Techtonica.</p>
-            </div>
-            <div class="folder-off">
+            </section>
+            <section id="SECOND" class="folder-off">
+                <div class="folder-nav">My Projects</div>
                 <h3>My Projects</h3>
                 <ul>
                     <li>Recipe Page</li>
                     <li>Github Repositories</li>
                 </ul>
-            </div>
-            <div class="folder-off">
+            </section>
+            <section id="THIRD" class="folder-off">
+                <div class="folder-nav">Contact</div>
                 <h3>Stay In Touch</h3>
                 <form>
-                    <input type="text">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname">
                 </form>
-            </div>
+            </section>
         </div>
+        <script src="portfolio.js"></script>
     </body>
 </html>
