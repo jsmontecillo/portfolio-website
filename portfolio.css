@@ -51,7 +51,7 @@ form {
     padding: 10px;
 }
 
-input[type=text] {
+input {
     box-sizing: border-box;
     width: 100%
 }
@@ -195,21 +195,79 @@ button {
     display:none;
 }
 
-@media (max-width: 375px){
+@media screen and (max-width: 375px){
+    body {
+        background-image: url(background.jpg_large);
+        background-size: cover;
+        background-attachment: fixed;
+    }
     .folder-icon {
-        display:none;
+        height: 80px;
+    }
+
+    #janice-photo {
+        border-radius: 50%;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+
+    .first-folder-on {
+        z-index: 0;
+        position: absolute;
+        height: 430px;
+        width: 230px;
+        margin-left: -60px;
+        padding: 0;
+        border: 7px black;
+        border-radius: 15px;
+        background-color:#ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: 0.5s;
+        overflow: scroll;
     }
 
     .second-folder-on {
         z-index: 1;
         position: absolute;
-        margin-top: 150px;
-        margin-left: 0px;
-        height: 400px;
-        width: 300px;
+        margin-top: 0px;
+        margin-left: -60px;
+        height: 430px;
+        width: 230px;
         padding: 0px;
         border-radius: 15px;
         background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: 0.5s;
+        overflow: scroll;
+    }
+
+    .third-folder-on {
+        position: absolute;
+        margin-left: -60px;
+        margin-top: 0;
+        z-index: 2;
+        height: 430px;
+        width: 230px;
+        padding: 0px;
+        border-radius: 15px;
+        background-color:#ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transition: 0.5s;
+        overflow: scroll;
+    }
+    
+    .fourth-folder-on {
+        position: absolute;
+        margin-left: -60px;
+        margin-top: 0px;
+        z-index: 2;
+        height: 430px;
+        width: 230px;
+        padding: 0px;
+        border-radius: 15px;
+        background-color:#ffffff;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transition: 0.5s;
         overflow: scroll;

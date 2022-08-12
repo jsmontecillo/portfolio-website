@@ -42,6 +42,18 @@ getNavi.appendChild(webDate);
 
 document.getElementById("new-user").addEventListener("submit", (e) => {
     e.preventDefault();
-    let userName = document.getElementById("fname").value;
-    console.log(userName);
+    let firstName = document.getElementById("fname").value;
+    let lastName = document.getElementById("lname").value;
+    let email = document.getElementById("email").value;
+    let phoneNumber = document.getElementById("phone").value;
+    console.log(firstName, lastName, email, phoneNumber);
 })
+
+function noDate(size){
+    if(size.matches){
+        webDate.innerHTML = "";
+    }
+}
+
+let iPhoneSize = window.matchMedia("(max-width: 375px");
+noDate(iPhoneSize);
