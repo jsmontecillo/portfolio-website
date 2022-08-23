@@ -90,10 +90,6 @@ button {
     margin-bottom: -10px;
 }
 
-.folder-icon:hover {
-    background-image: url(6.tiff);
-}
-
 .folder-names {
     font-size: 12px;
     text-align: center;
@@ -136,7 +132,7 @@ button {
     position: absolute;
     margin-top: 150px;
     margin-left: 500px;
-    height: 400px;
+    height: 440px;
     width: 300px;
     padding: 0px;
     border-radius: 15px;
